@@ -1,0 +1,230 @@
+/* Block colors for layout exercise */
+
+header,nav,section,sidebar,footer {
+	text-align: center;
+	border: gray solid thin;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+header { background-color:#d8930a;}
+nav{background-color: #11af1f;}
+sidebar{background-color:#ebff6d;}
+section{ background-color: #76aaf3;}
+footer{ background-color: #676767;}
+
+/*Layout One*/
+body
+{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.Layout1H
+{
+	margin-left: 0;
+	padding: 33px 0 0 0;
+	float: inherit;
+	height: 200px;
+	width: 100%;
+}
+
+.Layout1N
+{
+	float: left;
+	margin: 0 0 0 0;
+	height: 800px;
+	width: 33%;
+}
+
+.Layout1S
+{
+	float: inherit;
+	margin: auto;
+	height: 800px;
+	width: auto;
+}
+
+.Layout1F
+{
+	float: inherit;
+	margin: 0 0 0 0;
+	height: 200px;
+	width: 100%;
+}
+
+/* Layout Two */
+.Layout2H
+{
+	margin-left: 0;
+	padding: 33px 0 0 0;
+	float: inherit;
+	height: 80px;
+	width: 100%;
+}
+
+.Layout2N
+{
+	position:absolute;
+	top: 30px;
+	right: 40px;
+	width: 200px;
+	height: 40px
+}
+
+.Layout2S
+{
+	margin-left: 0;
+	padding: 33px 0 0 0;
+	float: inherit;
+	height: 300px;
+	width: 100%;	
+}
+
+.Layout2Sa
+{
+	float: left;
+	margin-left: 0;
+	padding: 33px 0 0 0;
+	margin-right: 0px;
+	width: 50%;
+	height: 80px;
+}
+
+.Layout2Sb
+{
+	float: right;
+	float: inherit;
+	padding: 33px 0 0 0;
+	margin-top: 0%;
+	margin-left: 50%;
+	height: 80px;
+	width: 50%;
+}
+
+/* Layout Three */
+.Layout3H
+{
+	margin-left: 0;
+	padding: 33px 0 0 0;
+	margin-top: 40px;
+	float: inherit;
+	height: 150px;
+	width: 100%;
+}
+
+.Layout3N
+{
+	position:absolute;
+	top: 00px;
+	right: 0px;
+	width: 400px;
+	height: 40px
+}
+
+#page-level
+{
+	margin-left: 0;
+	padding: 33px 0 0 0;
+	float: inherit;
+	height: 100px;
+	width: 100%;
+}
+
+.Layout3Sa, .Layout3Sb, .Layout3Sc
+{
+	float: left;
+	display: inline;
+}
+
+.Layout3Sa
+{
+	padding: 33px 0 0 0;
+	width: 33.05%;
+	height: 80px;	
+}
+
+.Layout3Sb
+{
+	padding: 33px 0 0 0;
+	width: 33.3%;
+	height: 80px;
+}
+
+.Layout3Sc
+{
+	padding: 33px 0 0 0;
+	height: 80px;
+	width: 33.3%;
+}
+
+/* Layout Four */
+.Layout4H
+{
+	margin-left: 10%;
+	padding: 33px 0 0 0;
+	height: 80px;
+	width: auto;
+}
+
+.Layout4Si
+{
+	position:absolute;
+	top: 00px;
+	left: 0px;
+	width: 10%;
+	height: 400px
+}
+
+.Layout4N
+{
+	padding: 60px;
+	margin: 10% auto;
+	width: 8%;
+}
+
+.Layout4S
+{
+	margin-left: 10%;
+	width: auto;
+	height: 170px
+}
+
+.Layout4Sa
+{
+	float: left;
+	margin-left: 10%;
+	padding: 33px 0 0 0;
+	/*margin-right: 0px;*/
+	width: 29.75%;
+	height: 80px;	
+}
+
+.Layout4Sb
+{
+	float: left;
+	/*margin-left: 33.3%;
+	margin-right: 0px;*/
+	padding: 33px 0 0 0;
+	width: 29.75%;
+	height: 80px;
+}
+
+.Layout4Sc
+{
+	float: left;
+	/*position: absolute;
+	margin-top: 0px;
+	top: 287px;*/
+	padding: 33px 0 0 0;
+	/*margin-left: 66.4%;
+	margin-right: 0px;*/
+	height: 80px;
+	width: 29.75%;
+}
+
+img
+{
+	float: left;
+}
