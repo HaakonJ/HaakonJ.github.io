@@ -180,6 +180,15 @@ footer
 	transform: translateY(4px);
 }
 
+.BIT168{
+	display: flex;
+	justify-content:space-around;
+	flex-flow: row wrap;
+	padding-top: 10px;
+	background-color:whitesmoke;
+	opacity: .8;
+}
+
 /*Launch Page*/
 
 button.accordion {
@@ -333,14 +342,15 @@ div.panel2.show {
 /*Demo's Page*/
 .ETab
 {
+	flex:4;
 	vertical-align: top;
 	font-family: 'orbitron', Sans-Serif;
 	margin-left: 10px;
+	margin-right: 10px;
 	padding-left: 5px;
 	margin-bottom: 10px;
 	background-color:darkgoldenrod;
-	opacity: .8;
-	width: 200px;
+	opacity: 1;
 	height: 250px;
 	display: inline-block;
 }
@@ -366,7 +376,7 @@ div.panel2.show {
 	margin-left: 10px;
 	margin-bottom: 5px;
 	background-color:#5e5e5e;
-	opacity: .8;
+	opacity: 1;
 	width: 220px;
 	height: 340px;
 	display: inline-block;
