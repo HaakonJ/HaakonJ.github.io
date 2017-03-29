@@ -119,7 +119,7 @@ body
 main
 {
 	margin-left:15%;
-	max-width: 85%;
+	width: 85%;
 	padding:71px 16px;
 	color: lightyellow;
 }
@@ -447,17 +447,17 @@ div.panel2.show {
 	}
 	
 	main{
-		width: 100%;
-		margin-left: 30px;
+	margin:0;
+		width: 100%
 	}
 	article{
-		width:98%;
+		margin: 0;
 	}
 	.CTab, .ETab{
 		width: 42%;
 	}
 	body{
-		width: 98%;
+		width: 100%;
 	}
 	.pageHead{
 		margin-top: 38px;
@@ -466,7 +466,7 @@ div.panel2.show {
 		width:100%;
 	}
 	footer{
-		width: 93%;
+		width: 100%;
 		margin-left: 0px;
 	}
 	.resume
