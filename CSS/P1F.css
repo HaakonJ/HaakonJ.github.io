@@ -45,7 +45,7 @@ a{
 	flex: 1 0 auto;
 	justify-content: space-around;
 	flex-wrap: nowrap;
-	height: 250px;
+	height: auto;
 	background-color: aqua;
 	padding: 4px;
 	border-radius: 0% 0% 0% 0%;
@@ -131,14 +131,14 @@ a{
 .CIcon{
 	margin: 20px;
 	border: none;
-	font-size: 150px;
+	font-size: 60px;
 	background-color: aqua;
 }
 
 .CIcon2{
 	margin: 20px;
 	border: none;
-	font-size: 150px;
+	font-size: 60px;
 	background-color: aqua;
 	align-content: center;
 }
@@ -256,6 +256,23 @@ div.panel2.show {
 	.ETab{
 		flex: 1 0 20%;
 	}
+	.Contact{
+		height: auto;
+	}
+		.CIcon{
+	margin: 20px;
+	border: none;
+	font-size: 75px;
+	background-color: aqua;
+}
+
+.CIcon2{
+	margin: 20px;
+	border: none;
+	font-size: 75px;
+	background-color: aqua;
+	align-content: center;
+}
 }
 
 /*Mobile*/
@@ -268,8 +285,7 @@ div.panel2.show {
 	.BIT175
 	{
 		height: auto;
-		width:545px;
-		flex: 1 0 auto;
+		flex: 1 0 100%;
 	}
 	.CTab{
 		height: 150px;
@@ -280,4 +296,18 @@ div.panel2.show {
 	.ETab{
 		width: 20%;
 	}
+	.CIcon{
+	margin: 20px;
+	border: none;
+	font-size: 150px;
+	background-color: aqua;
+}
+
+.CIcon2{
+	margin: 20px;
+	border: none;
+	font-size: 150px;
+	background-color: aqua;
+	align-content: center;
+}
 }
