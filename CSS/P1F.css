@@ -199,6 +199,9 @@ section.panel.show {
 	
 }
 
+.dot{
+	
+}
 @media(min-width: 480px) {
 	.panel.show{
 		display: flex;
@@ -239,6 +242,12 @@ section.panel.show {
 	background-color: aqua;
 	align-content: center;
 }
+		.ImgContainer{
+		height: 555px;
+	}
+	.art{
+		height: 500px;
+	}
 }
 
 /*Mobile*/
@@ -292,13 +301,12 @@ section.panel.show {
 	align-content: center;
 }
 	.Contact{
-		flex:1 0 auto;
-		flex-flow: row wrap;
+height: auto;
 	}
 	.ImgContainer{
-		height: 450px;
+		height: 655px;
 	}
 	.art{
-		height: 400px;
+		height: 600px;
 	}
 }
