@@ -1,315 +1,629 @@
 @charset "utf-8";
+
 /* CSS Document */
 
+
+
 header{
+
 	font-family: "Comic Sans MS";
+
 	font-size: 35px;
+
 }
+
 body{
+
 	background-color: whitesmoke;
+
 }
+
 article{
+
 }
+
+
 
 a{
+
 	text-decoration: none;
+
 	color:#2B2B2B;
+
 }
+
+
 
 .S{
+
 	flex: 1 0 auto;
+
 	flex-wrap: nowrap;
+
 	height: 250px;
+
 	background-color: aqua;
+
 	padding: 4px;
+
 	border-radius: 0% 0% 0% 0%;
+
 	border-color: black;
+
 	border-style: solid;
+
 	margin: 10px;
+
 }
+
+
 
 .SLong{
+
 	flex: 1 0 auto;
+
 	flex-wrap: nowrap;
+
 	height: auto;
+
 	min-height: 250px;
+
 	background-color: pink;
+
 	padding: 4px;
+
 	border-radius: 0% 0% 0% 0%;
+
 	border-color: black;
+
 	border-style: solid;
+
 	margin: 10px;
+
 }
+
+
 
 .Contact{
+
 	text-align: center;
+
 	flex: 1 0 auto;
+
 	justify-content: space-around;
+
 	flex-wrap: nowrap;
+
 	height: auto;
+
 	background-color: aqua;
+
 	padding: 4px;
+
 	border-radius: 0% 0% 0% 0%;
+
 	border-color: black;
+
 	border-style: solid;
+
 	margin: 10px;
+
 }
+
+
 
 .ETab
+
 {
+
 	flex:1 0 25%;
+
 	vertical-align: top;
+
 	font-family: 'orbitron', Sans-Serif;
+
 	margin:5px;
+
 	padding-left: 5px;
+
 	background-color:darkgoldenrod;
+
 	opacity: 1;
+
 	height: auto;
+
 	display: inline-block;
+
 }
+
+
 
 .ETab h2
+
 {
+
 	font-size: 1.15em;
+
 	padding: 0;
+
 }
+
+
 
 .ETab p
+
 {
+
 	padding: 0;
+
 	font-family: 'righteous', Sans-Serif;
+
 	font-size: 1.25em;
+
 	font-weight: bold;
+
 }
+
+
 
 .CTab
+
 {
+
 	font-family: 'orbitron', Sans-Serif;
+
 	vertical-align: top;
+
 	margin:5px;
+
 	background-color:#5e5e5e;
+
 	height: auto;
+
 	display: inline-block;
+
 	opacity: 1;
+
 	flex: 1 0 23%;
+
 }
+
+
 
 .CTab h2
+
 {
+
 	padding: 5px;
+
 }
+
+
 
 .CTab p
+
 {
+
 	font-family: 'righteous', Sans-Serif;
+
 	font-size: 20px;
+
 	font-weight: bold;
+
 	padding: 0;
+
 }
 
+
+
 .BIT168{
+
 	display: flex;
+
 	flex: 1 1 auto;
+
 	justify-content:space-around;
+
 	flex-flow: wrap;
+
 	padding-top: 0px;
+
 	background-color:whitesmoke;
+
 	opacity: .8;
+
 	font-size: 12px;
+
 }
+
+
+
 
 
 .BIT175{
+
 	display: flex;
+
 	flex-flow: wrap;
+
 	justify-content:space-around;
+
 	padding-top: 10px;
+
 	height: auto;
+
 	background-color:#91E0F4;
+
 	opacity: .8;
+
 }
+
+
 
 .BIT175.Recent{
+
 	width: 100%;
+
 }
+
+
 
 .CIcon{
+
 	margin: 20px;
+
 	border: none;
+
 	font-size: 60px;
+
 	background-color: aqua;
+
 }
 
+
+
 .CIcon2{
+
 	margin: 20px;
+
 	border: none;
+
 	font-size: 60px;
+
 	background-color: aqua;
+
 	align-content: center;
+
 }
+
+
 
 .accordion {
+
 	flex: 1 0 50%;
+
 	font-weight:bolder;
+
     cursor: pointer;
+
     text-align: left;
+
     outline: none;
+
     transition: 0.4s;
+
 }
+
+
 
 .accordion.active, button.accordion:hover {
+
     background-color: #3e3e3e;
+
 }
+
+
 
 .accordion:after {
+
     content: '🔺';
+
     font-size: 20px;
+
     color:dimgrey;
+
     float: right; 
+
 }
+
+
 
 .accordion.active:after {
+
     content: "🔻";
+
 }
 
-section.panel {
+
+
+div.panel {
+
     padding: 0px;
+
     max-height: 0;
+
     display:none;
+
     transition: 0.6s ease-in-out;
+
 	border: solid;
+
 	margin: 10px;
+
     opacity: 0;
+
 }
 
-section.panel.show {
+
+
+div.panel.show {
+
     opacity: 1;
+
 	display: flex;
+
 	flex-flow: wrap;
+
 	padding: 0;
+
 	height: auto;
+
     max-height: 550px;
+
 	color: black; 
+
 }
+
+
 
 .art{
+
 	height: 300px
+
 }
+
+
 
 .ImgContainer{
+
 	
+
 }
+
+
 
 .dot{
+
 	
+
 }
+
+
 
 .ImgText{
+
 	color: goldenrod;
+
 }
+
 @media(min-width: 480px) {
+
 	.panel.show{
+
 		display: flex;
+
 		width: auto;
 
+
+
 	}
+
 	.BIT175
+
 	{
+
 		flex-flow: wrap;
+
 		height: auto;
+
 		width:100;
+
 		flex: 1 0 100%;
+
 	}
+
 	.CTab{
+
 		height: 130px;
+
 		flex: 1 0 23%;
+
 	}
+
 	.BIT168{
+
 		flex: 1 0 100%;
+
 	}
+
 	.ETab{
+
 		flex: 1 0 20%;
+
 	}
+
 	.Contact{
+
 		height: auto;
+
 	}
+
 		.CIcon{
+
 	margin: 20px;
+
 	border: none;
+
 	font-size: 75px;
+
 	background-color: aqua;
+
 }
+
+
 
 .CIcon2{
+
 	margin: 20px;
+
 	border: none;
+
 	font-size: 75px;
+
 	background-color: aqua;
+
 	align-content: center;
+
 }
 
+
+
 	.art{
+
 		height: 400px;
+
 	}
+
 }
+
+
 
 /*Mobile*/
+
 @media(min-width: 860px) {
+
 .panel.show{
+
 	display: flex;
+
+		width: 100%;
+
+
+
+	}
+
+	main{
+
+		display: flex;
+
+		flex-flow: wrap;
+
+	}
+
+	.S{
+
+		flex:1 0 33%;
+
+		flex-flow: row wrap;
+
+	}
+
+	.SLong{
+
+		flex: 1 0 50%;
+
+		flex-flow: wrap;
+
+	}
+
+	.BIT175
+
+	{
+
+		height: auto;
+
+		flex: 1 0 50%;
+
+	}
+
+	.CTab{
+
+		height: auto;
+
+	}
+
+	.Recent{
+
+		height:150px;
+
+	}
+
+	.BIT168{
+
 		width: 100%;
 
 	}
-	article{
-		display: flex;
-		flex-flow: wrap;
-	}
-	.S{
-		flex:1 0 33%;
-		flex-flow: row wrap;
-	}
-	.SLong{
-		flex: 1 0 50%;
-		flex-flow: wrap;
-	}
-	.BIT175
-	{
-		height: auto;
-		flex: 1 0 50%;
-	}
-	.CTab{
-		height: auto;
-	}
-	.Recent{
-		height:150px;
-	}
-	.BIT168{
-		width: 100%;
-	}
+
 	.ETab{
+
 		width: 20%;
+
 	}
+
 	.CIcon{
+
 	margin: 20px;
+
 	border: none;
+
 	font-size: 150px;
+
 	background-color: aqua;
+
 }
+
+
 
 .CIcon2{
+
 	margin: 20px;
+
 	border: none;
+
 	font-size: 150px;
+
 	background-color: aqua;
+
 	align-content: center;
+
 }
+
 	.Contact{
+
 flex: 1 0 98%;
+
 	}
+
 	.ImgContainer{
+
 		height: 655px;
+
 	}
+
 	.art{
+
 		height: 500px;
+
 	}
+
 }
