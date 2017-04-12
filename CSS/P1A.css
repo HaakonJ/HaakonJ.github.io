@@ -12,7 +12,7 @@
     transform: rotate(-10deg);
 	transition: scale 2s;
 }
-
+ 
 .CIcon:hover, .CIcon2:hover{
 	    animation-name:bounce;
     animation-duration: 3s;
