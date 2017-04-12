@@ -17,55 +17,7 @@
 <script type="text/javascript" src="../../../JS/HJJQ.js"></script>
 <!-- Glyphicons -->
 <link type="text/css" rel="stylesheet" href="CSS/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg">
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Orbitron|Righteous" rel="stylesheet"> 
-</head>
-
-<body>
-<header>
-	<h1>Launch Page!</h1>
-	</header>
-	
-	<main>
-	
-		<article>
-		<a href="Prototype1Demo.html" >
-			<section class="S">
-			<h2>Terrors from the cyber world</h2>
-				<p>More info on Projects I've worked on.</p>
-			</section>
-			</a>
-			<section class="S accordion"><h2>Recent Work</h2></section>
-                  <section class="panel">
-                              <section class="BIT175 Recent">
-		<section class="CTab">
-		<h2>Prototype 1</h2>
-	<p><a href="../../../BIT175Prototypes/Description1.html">Main Page</a></p>
-		</section>
-			</section>
-			<section class="BIT168">
-			<section class="ETab">
-	<h2>Exercies 5</h2>
-	<p><a href="../../../DemoDescriptionPages/Exercise5.html">Pinwheel</a></p>
-	</section>
-	
-	<section class="ETab">
-	<h2>Exercies 6</h2>
-	<p><a href="../../../DemoDescriptionPages/Exercise6.html">Bunny Start</a></p>
-	</section>
-	
-	<section class="ETab">
-	<h2>Exercies 7</h2>
-	<p><a href="../../../DemoDescriptionPages/Exercise7.html">Stylin Grid</a></p>
-	</section>
-	
-	<section class="ETab">
-	<h2>Exercies 8</h2>
-	<p><a href="../../../DemoDescriptionPages/Exercise9.html">Responsive Design</a></p>
-	</section>
-			</section>
-                           </section>
-                           		<style>
+<style>
 * {box-sizing:border-box}
 body {font-family: Verdana,sans-serif;margin:0}
 
@@ -172,6 +124,53 @@ body {font-family: Verdana,sans-serif;margin:0}
 	img{height: 20px;}
 }
 </style>
+</head>
+
+<body>
+
+<header>
+	<h1>Launch Page!</h1>
+	</header>
+	
+	<main>
+	
+		<a href="Prototype1Demo.html" >
+			<section class="S">
+			<h2>Terrors from the cyber world</h2>
+				<p>More info on Projects I've worked on.</p>
+			</section>
+			</a>
+			<section class="S accordion"><h2>Recent Work</h2></section>
+                  <div class="panel">
+                              <div class="BIT175 Recent">
+		<section class="CTab">
+		<h2>Prototype 1</h2>
+	<p><a href="../../../BIT175Prototypes/Description1.html">Main Page</a></p>
+		</section>
+			</div>
+			<div class="BIT168">
+			<section class="ETab">
+	<h2>Exercies 5</h2>
+	<p><a href="../../../DemoDescriptionPages/Exercise5.html">Pinwheel</a></p>
+	</section>
+	
+	<section class="ETab">
+	<h2>Exercies 6</h2>
+	<p><a href="../../../DemoDescriptionPages/Exercise6.html">Bunny Start</a></p>
+	</section>
+	
+	<section class="ETab">
+	<h2>Exercies 7</h2>
+	<p><a href="../../../DemoDescriptionPages/Exercise7.html">Stylin Grid</a></p>
+	</section>
+	
+	<section class="ETab">
+	<h2>Exercies 8</h2>
+	<p><a href="../../../DemoDescriptionPages/Exercise9.html">Responsive Design</a></p>
+	</section>
+			</div>
+                           </div>
+                           		
 <div style="margin:10px; margin-bottom:0px; background-color:#000000; width: 100%;">
 
 <div class="slideshow-container">
@@ -235,17 +234,16 @@ function showSlides(n) {
 }
 	
 </script>
-			<section class="SLong" style="display: none;"></section>
-			<section class="Contact">
-				<a href="mailto:haakon@haakonjakobson.com"><button class="icon-mail2 CIcon"></button></a>
-				<a href="https://www.facebook.com/haakon.jakobson"><button class="icon-facebook2 CIcon2"></button></a>
-				<a href="https://github.com/HaakonJ"><button class="icon-github CIcon"></button></a>
-				<a href="https://www.linkedin.com/in/haakon-jakobson"><button class="icon-linkedin CIcon2"></button></a>
-				<a href="https://twitter.com/HaakonJakobson"><button class="icon-twitter CIcon"></button></a>
-				<button class="icon-phone CIcon2" id="Phone"></button>
+			<div class="SLong" style="display: none;"></div>
+			<div class="Contact">
+				<a href="mailto:haakon@haakonjakobson.com" class="icon-mail2 CIcon"></a>
+				<a href="https://www.facebook.com/haakon.jakobson" class="icon-facebook2 CIcon2"></a>
+				<a href="https://github.com/HaakonJ" class="icon-github CIcon"></a>
+				<a href="https://www.linkedin.com/in/haakon-jakobson" class="icon-linkedin CIcon2"></a>
+				<a href="https://twitter.com/HaakonJakobson" class="icon-twitter CIcon"></a>
+				<a class="icon-phone CIcon2" id="Phone"></a>
 				<p><strong id="PNumber"></strong></p>
-			</section>
-		</article>
+			</div>
 		<script>
 var acc = document.getElementsByClassName("accordion");
 var i;

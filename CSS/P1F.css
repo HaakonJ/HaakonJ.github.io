@@ -172,7 +172,7 @@ a{
     content: "🔻";
 }
 
-section.panel {
+div.panel {
     padding: 0px;
     max-height: 0;
     display:none;
@@ -182,7 +182,7 @@ section.panel {
     opacity: 0;
 }
 
-section.panel.show {
+div.panel.show {
     opacity: 1;
 	display: flex;
 	flex-flow: wrap;
@@ -260,7 +260,7 @@ section.panel.show {
 		width: 100%;
 
 	}
-	article{
+	main{
 		display: flex;
 		flex-flow: wrap;
 	}
