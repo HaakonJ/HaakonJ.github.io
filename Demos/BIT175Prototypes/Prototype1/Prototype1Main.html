@@ -240,11 +240,20 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 /* On smaller screens, decrease text size */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 0px) {
 
   .prev, .next,.text {font-size: 11px}
 
 	img{height: 20px;}
+
+}
+	
+	@media only screen and (min-width: 480px) {
+
+  .prev, .next, .text {font-size: 25px}
+		.text{ font-size: 15px;}
+
+	img{height: 100px;}
 
 }
 
