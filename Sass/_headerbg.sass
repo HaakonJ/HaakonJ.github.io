@@ -1,0 +1,29 @@
+/* Sass Document */
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+  
+$header-font:    orbitron, sans-serif
+$near-black: #0e0e0e
+$darker-grey: #484848
+$gold: darkgoldenrod
+  
+.box
+  +border-radius(10px)
+  background-color: $gold
+  
+.pageHead
+  background-color: $darker-grey
+  +border-radius(10px)
+  font: 100% $header-font
+  color: $gold
+    
+header h1
+  color: $near-black
+  text-decoration: none
+  
+p
+  background-color: $darker-grey
+  margin-left: 10px
