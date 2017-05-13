@@ -3,6 +3,8 @@ module.exports = function(grunt) {
   
 	//Project and task configuration
 	"use strict";
+	var mozjpeg = require('imagemin-mozjpeg');
+	
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
@@ -36,6 +38,43 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		
+		/*grunt-contrib-jshint
+		validates javaScript packages
+		URL: https://www.npmjs.com/package/grunt-contrib-jshint
+		*/
+		jshint:{
+			all:['Gruntfile.js','lib/**/*.js','test/**/*.js']
+			   },
+		
+		/*Grunt-contrib-imagemin
+		minumizes images
+		URL: https://www.npmjs.com/package/grunt-contrib-imagemin
+		*/
+		
+		imagemin:{//Task
+			static:{//Target
+				options:{//Target-options
+					optimizationLevel:3,
+					svgoPlugins:[{removeViewBox:false}],
+					use:[mozjpeg()]
+				},
+				files:{//Dictionary-of-files
+					'Images/img.png':['assets/images/*.png'],//'destination':'source'
+					'Images/img.jpg':['assets/images/*.jpg'],
+					'Images/img.gif':['assets/images/*.gif']
+				}
+			},
+			dynamic:{//Another-target
+		files:[{
+		  expand:true,//Enable-dynamic-expansioe
+		  cwd:'src/',//Src-matches-are-relative-to-this-path
+		  src:['**/*.{png,jpg,gif}'],//Actual-patterns-to-match
+		  dest:'dist/'//Destination-path-prefix
+	  }]
+	}
+		},
+		
 		/**
 		* Grunt Contrib Watch
 		* Monitor files and excute tasks
@@ -44,9 +83,7 @@ module.exports = function(grunt) {
 		*/
 		
 		watch: {
-
 			sass: {
-
 				files: [
 					'assets/scss/*.scss',
 					'assets/partials/_*.scss'
@@ -56,13 +93,15 @@ module.exports = function(grunt) {
 				]
 			},
 			uglify: {
-
 				files: [
 					'assets/js/*.js'
 				],
 				tasks: [
 					'uglify'
-				]
+				],
+				all:[
+					'Gruntfile.js','lib/**/*.js','test/**/*.js'
+				],
 			}
 		}
 
@@ -74,5 +113,7 @@ module.exports = function(grunt) {
 	//Custom tasks
 	grunt.registerTask('default', ['watch']);
 	/*grunt.loadNpmTasks('grunt-contrib-uglify');*/
-
+/*grunt.loadNpmTasks('grunt-contrib-jshint');*/
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	
 };
