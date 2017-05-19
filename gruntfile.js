@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   
 	//Project and task configuration
 	"use strict";
-	var mozjpeg = require('imagemin-mozjpeg');
+	/*var mozjpeg = require('imagemin-mozjpeg');*/ /*variable for imagemin function*/
 	
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
@@ -30,11 +30,12 @@ module.exports = function(grunt) {
 		*/
 		uglify:{
 			options:{
-				mangle:true
+				compress:true
 			},
 			my_target:{
 				files:{
-					'js/scripts.min.js':['assets/js/scripts.js']
+					'js/scripts.min.js':['assets/js/scripts.js'],
+					'js/jqscripts.min.js':['assets/js/jquery/jqscripts.js']
 				}
 			}
 		},
@@ -44,7 +45,7 @@ module.exports = function(grunt) {
 		URL: https://www.npmjs.com/package/grunt-contrib-jshint
 		*/
 		jshint:{
-			all:['Gruntfile.js','lib/**/*.js','test/**/*.js']
+			all:['Gruntfile.js','assets/js/scripts.js']
 			   },
 		
 		/*Grunt-contrib-imagemin
@@ -52,7 +53,7 @@ module.exports = function(grunt) {
 		URL: https://www.npmjs.com/package/grunt-contrib-imagemin
 		*/
 		
-		imagemin:{//Task
+		/*imagemin:{//Task
 			static:{//Target
 				options:{//Target-options
 					optimizationLevel:3,
@@ -69,11 +70,11 @@ module.exports = function(grunt) {
 		files:[{
 		  expand:true,//Enable-dynamic-expansioe
 		  cwd:'src/',//Src-matches-are-relative-to-this-path
-		  src:['**/*.{png,jpg,gif}'],//Actual-patterns-to-match
+		  src:['**/ /*.{png,jpg,gif}'],//Actual-patterns-to-match
 		  dest:'dist/'//Destination-path-prefix
 	  }]
 	}
-		},
+		},*/
 		
 		/**
 		* Grunt Contrib Watch
@@ -94,7 +95,8 @@ module.exports = function(grunt) {
 			},
 			uglify: {
 				files: [
-					'assets/js/*.js'
+					'assets/js/*.js',
+					'assets/js/jquery/*.js'
 				],
 				tasks: [
 					'uglify'
