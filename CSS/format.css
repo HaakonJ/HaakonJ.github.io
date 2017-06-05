@@ -229,7 +229,7 @@ button.accordion.active:after {
     content: "🔻";
 }
 
-section.panel {
+div.panel {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
@@ -237,7 +237,7 @@ section.panel {
     opacity: 0;
 }
 
-section.panel.show {
+div.panel.show {
     opacity: 1;
     max-height: 500px;
 	color: #9e9e9e; 
