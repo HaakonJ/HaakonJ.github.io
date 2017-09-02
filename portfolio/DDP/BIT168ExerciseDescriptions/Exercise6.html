@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haakon Portfolio Demos</title>
+    <link href="../../../CSS/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../../../Fonts/style.css" rel="stylesheet" type="text/css">
+    <link href="../../../CSS/format.css" rel="stylesheet" type="text/css">
+    <link href="../../../CSS/Animate.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="CSS/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="../../../index.html">
+                <span class="icon-home"></span> Haakon Jakobson Portfolio</a>
+        </h1>
+        <span onclick="openNav()" class="icon-menu menu-Button"></span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../../about.html"><span class="icon-user-tie"></span> About</a></li>
+            <li><a href="../../portfolio.html"><span class="icon-folder-open"></span> Past Work</a></li>
+            <li><a href="../../../sideProjects/sideProjects.html"><span class="icon-lab"></span> Side Projects</a></li>
+            <li><a href="../../../gallery/gallery.html"><span class="icon-camera"></span> Gallery</a></li>
+            <!--<li><a href="recruiting/recruiting.html"><span class="icon-folder-open"></span> Side Projects</a></li>-->
+        </ul>
+    </nav>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../../../about.html">About &#x1F464;</a>
+            <a href="../../portfolio.html"><span class="icon-folder-open"></span> Past Work</a>
+            <a href="../../../sideProjects/sideProjects.html"><span class="icon-lab"></span> Side Projects</a>
+            <a href="../../../gallery/gallery.html"><span class="icon-camera"></span> Gallery</a>
+            <!--<a href="recruiting/recruiting.html"><span class="icon-folder-open"></span> Side Projects</a>-->
+        </div>
+    </div>
+
+    <h3 class="pageHead">Bunny Animation Demo Description</h3>
+    <main>
+        <article class="SiteDescription">
+            <h2>Client Information</h2>
+            <p>
+                The Bunny animation was the sixth Exercies I had to do for my BIT 168 class at Cascadia College. It is a Valentine's Day animation involving two rabbits. The animation has two endings.
+            </p>
+        </article>
+        <article class="SiteGenInfo">
+            <h2>Project Description</h2>
+            <p>Here are some screen shots of the website for you to look at if you just want a quick look over of the site. If you want a more in depth look at the site you can find it here.</p>
+            <a href="../../Demos/BIT168Exercises/E6_bunny_start/start.html" target="_blank" class="Button1">Bunny Animation</a>
+            <p>The following are pictures of the start and two endings of the animation.</p>
+            <img class="art" src="../../../Images/DemoScreenShots/BunnyStart.PNG" alt="Bunny animation Screen shot" />
+            <img class="art" src="../../../Images/DemoScreenShots/BunnySad.PNG" alt="Bunny animation Sad endging Screen shot" />
+            <img class="art" src="../../../Images/DemoScreenShots/BunnyHappy.PNG" alt="Bunny animation happy endging Screen shot" />
+        </article>
+    </main>
+    <footer>
+        <p style="text-align:center;">
+            Thank you for coming to my site portfolio!
+        </p>
+        <p style="text-align: center;">
+            contact me at Haakonjakobson@gmail.com
+        </p>
+        <p style="text-align:center;">
+            Copyright © 2017 Haakon Jakobson All Rights Reserved
+        </p>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>

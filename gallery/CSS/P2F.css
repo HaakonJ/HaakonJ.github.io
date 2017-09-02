@@ -26,6 +26,10 @@ header h1 {
     /* Standard syntax */
 }
 
+header .menu-Button {
+    display: none;
+}
+
 .pageHead {
     font-family: 'orbitron', Sans-Serif;
     font-weight: bolder;
@@ -398,6 +402,11 @@ div.panel2.show {
 
 /*RecentPage*/
 
+.GalleryFlex {
+    display: flex;
+    justify-content: space-around;
+}
+
 .art {
     margin: 0 10%;
     Width: 80%;
@@ -411,16 +420,51 @@ div.panel2.show {
     height: 300px;
 }
 
+.art3 {
+    margin: 5px 1%;
+    width: 98%;
+    height: 500px;
+}
+
+.ArtDesc {
+    margin-top: 20px;
+    display: flex;
+}
+
+.MAD {
+    flex: 1 0 65%;
+}
+
+.OtherArt {
+    margin-top: 20px;
+    margin: 0 5px;
+    flex: 1 0 35%;
+}
+
 .ArtSlider {
+    height: 500px;
     flex: 2 0 65%;
-    margin: 0px 1px;
+    margin: 0px 2px 0 0;
     overflow: hidden;
 }
 
 .RecentArt {
     flex: 2 0 35%;
-    margin: 0 1px;
+    margin: 0;
     overflow: hidden;
+}
+
+.recentItems {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.recentItem {
+    flex: 1 0 40%;
+    height: 140px;
+    margin: 0 5px;
 }
 
 .Catagories {
@@ -430,9 +474,111 @@ div.panel2.show {
 .GA1,
 .GA2,
 .GA3 {
+    height: 1000px;
+    overflow-y: scroll;
     margin: 0 2px;
     flex: 1 0 32%;
     justify-content: space-between;
+}
+
+@media(max-width: 1550px) {
+    .recentItems {
+        height: 450px;
+        overflow-y: scroll;
+    }
+}
+
+@media(max-width: 860px) {
+    .GalleryFlex {
+        flex-flow: wrap;
+    }
+    header h1 {
+        margin-top: 0;
+    }
+    footer {
+        width: 90%;
+        margin: auto;
+        padding: 0;
+    }
+    main {
+        width: 90%;
+        margin: 0px;
+    }
+    h3,
+    h1 {
+        margin: 0;
+    }
+    header a {
+        margin: 0;
+    }
+    .ArtDesc {
+        width: 100%;
+        margin: auto;
+        flex-flow: wrap;
+    }
+    .MAD {
+        margin: 0;
+        width: 100%;
+    }
+    .art3 {
+        width: 98%;
+    }
+    .GA1,
+    .GA2,
+    .GA3 {
+        margin: 0 5px;
+        flex: 1 0 32%;
+        justify-content: space-between;
+    }
+    .recentItems {
+        overflow-y: inherit;
+    }
+    .SiteGenInfo {
+        width: 98%;
+        margin: 0;
+    }
+    .art3 {
+        widows: 98%;
+        margin: 0 5px
+    }
+}
+
+@media(max-width: 1375px) {
+    body {
+        overflow-x: hidden;
+    }
+    .ArtDesc {
+        margin: 0px;
+    }
+    .GA1,
+    .GA2,
+    .GA3 {
+        margin: 5px 2px;
+        flex: 1 0 48%;
+        justify-content: space-between;
+    }
+    .Catagories {
+        flex-flow: wrap;
+    }
+}
+
+@media(max-width: 600px) {
+    .GA1,
+    .GA2,
+    .GA3 {
+        margin: 5px 0;
+        flex: 1 0 100%;
+        justify-content: space-between;
+    }
+    .Catagories {
+        flex-flow: wrap;
+    }
+}
+
+@media(max-width: 480px) {
+    .recentItems {
+        overflow-y: scroll;
+    }
 }
 
 
@@ -473,11 +619,14 @@ div.panel2.show {
 @media(max-width: 860px) {
     nav {
         display: none;
-        margin-left: 0px;
+        margin: 0px;
     }
     header {
         font-size: 9px;
         width: 100%;
+    }
+    header .menu-Button {
+        display: block;
     }
     main {
         margin: 0;
@@ -501,7 +650,7 @@ div.panel2.show {
     }
     footer {
         width: 100%;
-        margin-left: 0px;
+        margin: 0px;
     }
     .resume {
         margin-top: 20px;
@@ -522,7 +671,7 @@ div.panel2.show {
 @media(max-width: 480px) {
     nav {
         display: none;
-        margin-left: 0px;
+        margin: 0px;
     }
     .MMenu {
         visibility: visible;
@@ -534,7 +683,7 @@ div.panel2.show {
     }
     main {
         width: 100%;
-        margin-left: 20px;
+        margin-left: 0px;
     }
     article {
         width: 98%;
@@ -587,8 +736,8 @@ header .menu-Button {
     cursor: pointer;
     z-index: 100;
     right: 10px;
-    top: 3px;
-    font-size: 32px;
+    top: 8px;
+    font-size: 22px;
 }
 
 .overlay {

@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haakon Portfolio Demos</title>
+    <link href="../../../CSS/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../../../Fonts/style.css" rel="stylesheet" type="text/css">
+    <link href="../../../CSS/format.css" rel="stylesheet" type="text/css">
+    <link href="../../../CSS/Animate.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="CSS/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="../../../index.html">
+                <span class="icon-home"></span> Haakon Jakobson Portfolio</a>
+        </h1>
+        <span onclick="openNav()" class="icon-menu menu-Button"></span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../../about.html"><span class="icon-user-tie"></span> About</a></li>
+            <li><a href="../../portfolio.html"><span class="icon-folder-open"></span> Past Work</a></li>
+            <li><a href="../../../sideProjects/sideProjects.html"><span class="icon-lab"></span> Side Projects</a></li>
+            <li><a href="../../../gallery/gallery.html"><span class="icon-camera"></span> Gallery</a></li>
+            <!--<li><a href="recruiting/recruiting.html"><span class="icon-folder-open"></span> Side Projects</a></li>-->
+        </ul>
+    </nav>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../../../about.html">About &#x1F464;</a>
+            <a href="../../portfolio.html"><span class="icon-folder-open"></span> Past Work</a>
+            <a href="../../../sideProjects/sideProjects.html"><span class="icon-lab"></span> Side Projects</a>
+            <a href="../../../gallery/gallery.html"><span class="icon-camera"></span> Gallery</a>
+            <!--<a href="recruiting/recruiting.html"><span class="icon-folder-open"></span> Side Projects</a>-->
+        </div>
+    </div>
+
+    <h3 class="pageHead">Responsive and non-responsive design assignment description</h3>
+    <main>
+        <article class="SiteDescription">
+            <h2>Client Information</h2>
+            <p>
+                This is a class assignment that I created for BIT 168. The object of the assignment was to make the following webpage into a responisve version of itself.
+            </p>
+        </article>
+        <article class="SiteGenInfo">
+            <h2>Project Description</h2>
+            <p>
+                There are several screen shots of the website for you to look at if you want. You can also click the links for a more in-depth look at the sites shown in the images bellow.
+            </p>
+
+            <p>As you can see from the screen shots the original website doesn't change to better fit the screen for other screen sizes and the navigation always takes up a certian amount of space on the page. The responsive version of the webpage, however
+                changes the navigation position as well as the content so that it changes layout on smaller screen sizes. If you want to see more click on either one of the links to test them out.</p>
+            <a href="../../Demos/BIT168Exercises/BIT168Exercises/E9_Responsive_Styling/index.html" target="_blank" class="Button1">
+			Assignment 8 Non-Responsive
+			</a>
+            <p> </p>
+            <img src="../../../Images/DemoScreenShots/NonResponsiveBig.PNG" alt="large Non-Responsive" class="art">
+            <img src="../../../Images/DemoScreenShots/NonResponsiveSmall.PNG" alt="Small Non-Responsive" class="art" style="height: 500px; width: 25%">
+            <p>
+                This is a link to the responsive version of the above link.
+            </p>
+            <a href="../../Demos/BIT168Exercises/E9_Responsive_Styling/responsive.html" target="_blank" class="Button1">Assignment 8 Responsive</a>
+            <p></p>
+            <img src="../../../Images/DemoScreenShots/ResponsiveMid.PNG" alt="Meduim Responsive" class="art" style="height: 500px; width: 40%">
+
+            <img src="../../../Images/DemoScreenShots/ResponsiveSmall.PNG" alt="Small Responsive" class="art" style="height: 500px; width: 25%">
+
+        </article>
+    </main>
+    <footer>
+        <p style="text-align:center;">
+            Thank you for coming to my site portfolio!
+        </p>
+        <p style="text-align: center;">
+            contact me at Haakonjakobson@gmail.com
+        </p>
+        <p style="text-align:center;">
+            Copyright © 2017 Haakon Jakobson All Rights Reserved
+        </p>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>
