@@ -128,8 +128,56 @@ input[type="color"]:focus,
     border: 1px solid #F4BD21;
 }
 
+.progress2.plain2 {
+    border: 1px solid #4CBD02;
+}
+
+.progress3.plain3 {
+    border: 1px solid #098FD5;
+}
+
+.progress4.plain4 {
+    border: 1px solid #EE8017;
+}
+
+.progress5.plain5 {
+    border: 1px solid #9045E8;
+}
+
+.progress6.plain6 {
+    border: 1px solid #08A8D5;
+}
+
+.progress7.plain7 {
+    border: 1px solid #E9442D;
+}
+
 .progress.plain .bar {
     background: #F4BD21;
+}
+
+.progress2.plain2 .bar2 {
+    background: #4CBD02;
+}
+
+.progress3.plain3 .bar3 {
+    background: #098FD5;
+}
+
+.progress4.plain4 .bar4 {
+    background: #EE8017;
+}
+
+.progress5.plain5 .bar5 {
+    background: #9045E8;
+}
+
+.progress6.plain6 .bar6 {
+    background: #08A8D5;
+}
+
+.progress7.plain7 .bar7 {
+    background: #E9442D;
 }
 
 .panel-title>a:hover {
